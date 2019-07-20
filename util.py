@@ -40,7 +40,8 @@ def get_unit_int_conversion_helper(data): # return unit_to_int and int_to_unit c
 				vocub.add(unit)
 
 	# adding command units
-	int_to_unit = [unit for unit in command_unit]
+	int_to_unit = ['PAD', 'GO', 'EOS', 'UNK']
+
 	# adding units from vocub set
 	int_to_unit.extend(list(vocub))
 	
